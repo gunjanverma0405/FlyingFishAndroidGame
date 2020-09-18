@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash"
+    tools:context=".SplashActivity">
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="The Flying Fish"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:textSize="34sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/image1"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/text1"
+        android:src="@drawable/splash_icon"
+        />
+
+    <Button
+        android:id="@+id/startthegame"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:layout_centerHorizontal="true"
+        android:shadowColor="#007E1313"
+        android:text="Start Game"
+        android:textSize="30sp"
+        android:textColor="@color/White"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/rule"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startthegame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:shadowColor="#007E1313"
+        android:text="Rules"
+        android:textSize="30sp"
+        android:textColor="@color/White"
+        android:background="@color/colorPrimaryDark"/>
+
+    <Button
+        android:id="@+id/aboutthegame"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rule"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:shadowColor="#007E1313"
+        android:text="About the game"
+        android:textSize="30sp"
+        android:textColor="@color/White"
+        android:background="@color/colorPrimaryDark"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Developed by Gunjan Verma"
+        android:textAlignment="center"
+        android:textColor="@color/White"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:layout_below="@+id/aboutthegame"
+        android:layout_marginTop="30dp" />
+</RelativeLayout>
